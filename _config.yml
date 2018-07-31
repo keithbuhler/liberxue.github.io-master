@@ -1,0 +1,37 @@
+# ----------- CONFIGURABLE START -----------
+title:            "Girls Group Ministry"
+description:      "A site for sharing ministry resources for Orthodox youth groups"
+url:              https://www.orthodoxministryshare.com # 
+signoff:          "Lindsay Buhler" # Your name
+facebook_appid:   
+google_analytics: UA-71712734-1
+share:            true 
+paginate: 3
+paginate_path: "liberxuepage:num"
+gems: [jekyll-paginate]
+links:
+  - name:         link 1 home
+    url:          /
+    external:     false
+  - name:         link 2 book
+    url:          /book
+    external:     false
+  - name:         link 3 road
+    url:          /road
+    external:     false
+  - name:         link 4 archives
+    url:          /archives
+    external:     false
+  - name:         link 5 tags
+    url:          /tags
+    external:     false
+  - name:         link 6 about
+    url:          /about
+    external:     false
+# ------------ CONFIGURABLE END ------------
+
+#permalink:        /:categories/:title.html
+permalink: /:year/:month/:day/:title.html
+defaults:
+  - values:
+      layout: "default"
